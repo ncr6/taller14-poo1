@@ -35,6 +35,10 @@ public class Hotel {
         return habs;
     }
     
+    public void setHabs(ArrayList<Habitacion> habs) {
+        this.habs = habs;
+    }
+    
     private String nombre;
     private String ruc;
     private ArrayList<Habitacion> habs;

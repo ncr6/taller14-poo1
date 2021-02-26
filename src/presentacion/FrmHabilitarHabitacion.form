@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="selectorPiso">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="selectorTipo">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Dar de alta una Habitaci&#xf3;n"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="lblPrecio" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="btnSimple" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="btnDoble" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="btnTriple" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="lblSoles" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblAviso" max="32767" attributes="0"/>
+                                  <Component id="txtSoles" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lblPunto" min="-2" pref="4" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtCentimos" min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="lblTipo" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPiso" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="btnPrimerPiso" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnSegundoPiso" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="btnTercerPiso" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="btnCuartoPiso" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="284" max="-2" attributes="0"/>
+                      <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btnRegistrar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="lblPiso" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnPrimerPiso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSegundoPiso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnTercerPiso" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCuartoPiso" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Component id="lblTipo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnSimple" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnDoble" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnTriple" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblPrecio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblSoles" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtSoles" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCentimos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPunto" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="lblAviso" min="-2" pref="12" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="btnRegistrar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JRadioButton" name="btnPrimerPiso">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorPiso"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnPrimerPiso" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Primero"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPrimerPisoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnSegundoPiso">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorPiso"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnSegundoPiso" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Segundo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnTercerPiso">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorPiso"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnTercerPiso" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tercero"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnCuartoPiso">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorPiso"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnCuartoPiso" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cuarto"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPiso">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="lblPiso" property="font" relativeSize="true" size="3"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Seleccione el piso de la habitaci&#xf3;n a habilitar:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPrecio">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="lblPrecio" property="font" relativeSize="true" size="3"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Precio por noche:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTipo">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="lblTipo" property="font" relativeSize="true" size="3"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Seleccione el tipo de habitaci&#xf3;n:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnSimple">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorTipo"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnSimple" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Simple"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnDoble">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorTipo"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnDoble" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Doble"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="btnTriple">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorTipo"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnTriple" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Triple"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+      <Properties>
+        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+          <ComponentRef name="selectorTipo"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="jRadioButton1" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Matrimonial"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblSoles">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="lblSoles" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="S/"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnRegistrar">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="btnRegistrar" property="font" relativeSize="true" size="3"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Registrar"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtSoles">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="txtSoles" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSolesActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="txtSoles.setTransferHandler(null);&#xa;txtSoles.addKeyListener(new KeyAdapter() {&#xa;    public void keyPressed(KeyEvent ke) {&#xa;        String value = txtSoles.getText();&#xa;        int l = value.length();&#xa;        if ((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar()==&apos;\b&apos;) {&#xa;           txtSoles.setEditable(true);&#xa;           lblAviso.setText(&quot;&quot;);&#xa;        } else {&#xa;           txtSoles.setEditable(false);&#xa;           lblAviso.setText(&quot;Solo se admiten n&#xfa;meros&quot;);&#xa;        }&#xa;    }&#xa;});&#xa;txtSoles.addKeyListener(new java.awt.event.KeyAdapter() {&#xa;    public void keyTyped(java.awt.event.KeyEvent evt) {&#xa;        if(txtSoles.getText().length()&gt;=6&amp;&amp;!(evt.getKeyChar()==KeyEvent.VK_DELETE||evt.getKeyChar()==KeyEvent.VK_BACK_SPACE)) {&#xa;            getToolkit().beep();&#xa;            evt.consume();&#xa;         }&#xa;     }&#xa;});"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="txtCentimos">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="txtCentimos" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="txtCentimos.setTransferHandler(null);&#xa;txtCentimos.addKeyListener(new KeyAdapter() {&#xa;    public void keyPressed(KeyEvent ke) {&#xa;        String value = txtCentimos.getText();&#xa;        int l = value.length();&#xa;        if ((ke.getKeyChar() &gt;= &apos;0&apos; &amp;&amp; ke.getKeyChar() &lt;= &apos;9&apos;) || ke.getKeyChar()==&apos;\b&apos;) {&#xa;           txtCentimos.setEditable(true);&#xa;           lblAviso.setText(&quot;&quot;);&#xa;        } else {&#xa;           txtCentimos.setEditable(false);&#xa;           lblAviso.setText(&quot;Solo se admiten n&#xfa;meros&quot;);&#xa;        }&#xa;    }&#xa;});&#xa;txtCentimos.addKeyListener(new java.awt.event.KeyAdapter() {&#xa;    public void keyTyped(java.awt.event.KeyEvent evt) {&#xa;        if(txtCentimos.getText().length()&gt;=2&amp;&amp;!(evt.getKeyChar()==KeyEvent.VK_DELETE||evt.getKeyChar()==KeyEvent.VK_BACK_SPACE)) {&#xa;            getToolkit().beep();&#xa;            evt.consume();&#xa;         }&#xa;     }&#xa;});"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAviso">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="lblAviso" property="font" relativeSize="true" size="-3"/>
+          </FontInfo>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPunto">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="lblPunto" property="font" relativeSize="true" size="2"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="."/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

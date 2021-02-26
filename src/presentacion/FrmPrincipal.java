@@ -79,6 +79,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         btnHabitaciones.setFont(btnHabitaciones.getFont().deriveFont(btnHabitaciones.getFont().getSize()+3f));
         btnHabitaciones.setText("Habitaciones");
+        btnHabitaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHabitacionesActionPerformed(evt);
+            }
+        });
 
         btnHabBoleta.setFont(btnHabBoleta.getFont().deriveFont(btnHabBoleta.getFont().getSize()+3f));
         btnHabBoleta.setText("Generar Boleta");
@@ -258,6 +263,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
         lblRucHotel.setText("RUC: " + hotel.getRuc());
     }//GEN-LAST:event_mnuitSetRucActionPerformed
 
+    private void btnHabitacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHabitacionesActionPerformed
+        new FrmBotonesHab(hotel.getHabs()).setVisible(true);
+    }//GEN-LAST:event_btnHabitacionesActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -308,4 +317,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnuitSetRuc;
     // End of variables declaration//GEN-END:variables
     private Hotel hotel = new Hotel("indefinido", "00000000000");
+    
+    int countPrimerPiso = 0;
+    int countSegundoPiso = 0;
+    int countTercerPiso = 0;
+    int countCuartoPiso = 0;
 }
