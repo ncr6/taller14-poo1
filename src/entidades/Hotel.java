@@ -1,6 +1,7 @@
 package entidades;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  *
@@ -39,7 +40,51 @@ public class Hotel {
         this.habs = habs;
     }
     
+    public void addHab(Habitacion hab){
+        habs.add(hab);
+    }
+    
+    public void sortHabs(){
+        Collections.sort(habs);
+    }
+    
     private String nombre;
     private String ruc;
     private ArrayList<Habitacion> habs;
+    private int contp1 = 0;
+    private int contp2 = 0;    
+    private int contp3 = 0;
+    private int contp4 = 0;
+
+    public int getContp1() {
+        return contp1;
+    }
+
+    public void setContp1(int contp1) {
+        this.contp1 = contp1;
+    }
+
+    public int getContp2() {
+        return contp2;
+    }
+
+    public void setContp2(int contp2) {
+        this.contp2 = contp2;
+    }
+
+    public int getContp3() {
+        return contp3;
+    }
+
+    public void setContp3(int contp3) {
+        this.contp3 = contp3;
+    }
+
+    public int getContp4() {
+        return contp4;
+    }
+
+    public void setContp4(int contp4) {
+        this.contp4 = contp4;
+    }
 }

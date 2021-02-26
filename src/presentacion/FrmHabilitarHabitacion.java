@@ -5,6 +5,8 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.util.ArrayList;
 import com.formdev.flatlaf.FlatLightLaf;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 /**
  *
@@ -19,6 +21,35 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
      */
     public FrmHabilitarHabitacion() {
         initComponents();
+    }
+    
+    public FrmHabilitarHabitacion(Hotel h) {
+        initComponents();
+        
+        this.h = h;
+        
+        campos = new ArrayList<>();
+        campos.add(txtSoles); campos.add(txtCentimos);
+        
+        DocumentListener escucharCampos = new DocumentListener() {
+            @Override
+            public void removeUpdate(DocumentEvent e) { changedUpdate(e); }
+            @Override
+            public void insertUpdate(DocumentEvent e) { changedUpdate(e); }
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+                boolean habilitarBtn = true;
+                    for (JTextField tf : campos) {
+                        if (tf.getText().isEmpty()) {
+                            habilitarBtn = false;
+                        }
+                    }
+                    btnRegistrar.setEnabled(habilitarBtn);
+                }
+            };
+        for (JTextField tf : campos) {
+            tf.getDocument().addDocumentListener(escucharCampos);
+        }
     }
 
     /**
@@ -42,7 +73,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
         btnSimple = new javax.swing.JRadioButton();
         btnDoble = new javax.swing.JRadioButton();
         btnTriple = new javax.swing.JRadioButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
+        btnMatri = new javax.swing.JRadioButton();
         lblSoles = new javax.swing.JLabel();
         btnRegistrar = new javax.swing.JButton();
         txtSoles = new javax.swing.JFormattedTextField();
@@ -62,6 +93,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
                 btnPrimerPisoActionPerformed(evt);
             }
         });
+        btnPrimerPiso.setSelected(true);
 
         selectorPiso.add(btnSegundoPiso);
         btnSegundoPiso.setFont(btnSegundoPiso.getFont().deriveFont(btnSegundoPiso.getFont().getSize()+2f));
@@ -96,15 +128,21 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
         btnTriple.setFont(btnTriple.getFont().deriveFont(btnTriple.getFont().getSize()+2f));
         btnTriple.setText("Triple");
 
-        selectorTipo.add(jRadioButton1);
-        jRadioButton1.setFont(jRadioButton1.getFont().deriveFont(jRadioButton1.getFont().getSize()+2f));
-        jRadioButton1.setText("Matrimonial");
+        selectorTipo.add(btnMatri);
+        btnMatri.setFont(btnMatri.getFont().deriveFont(btnMatri.getFont().getSize()+2f));
+        btnMatri.setText("Matrimonial");
 
         lblSoles.setFont(lblSoles.getFont().deriveFont(lblSoles.getFont().getSize()+2f));
         lblSoles.setText("S/");
 
         btnRegistrar.setFont(btnRegistrar.getFont().deriveFont(btnRegistrar.getFont().getSize()+3f));
         btnRegistrar.setText("Registrar");
+        btnRegistrar.setEnabled(false);
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarActionPerformed(evt);
+            }
+        });
 
         txtSoles.setHorizontalAlignment(javax.swing.JTextField.TRAILING);
         txtSoles.setFont(txtSoles.getFont().deriveFont(txtSoles.getFont().getSize()+2f));
@@ -186,7 +224,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
                         .addComponent(btnCuartoPiso))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(284, 284, 284)
-                        .addComponent(jRadioButton1)))
+                        .addComponent(btnMatri)))
                 .addContainerGap(25, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -211,7 +249,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
                     .addComponent(btnSimple)
                     .addComponent(btnDoble)
                     .addComponent(btnTriple)
-                    .addComponent(jRadioButton1))
+                    .addComponent(btnMatri))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPrecio)
@@ -226,6 +264,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
                 .addGap(22, 22, 22))
         );
 
+        btnSimple.setSelected(true);
         txtCentimos.setTransferHandler(null);
         txtCentimos.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent ke) {
@@ -261,6 +300,42 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSolesActionPerformed
 
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        Habitacion nuevaHab; TipoHab tipo = TipoHab.SIMPLE; float precio;
+        
+        precio = Float.parseFloat(txtCentimos.getText())/10 + Float.parseFloat(txtSoles.getText());
+        
+        if (btnSimple.isSelected()) tipo = TipoHab.SIMPLE;
+        if (btnDoble.isSelected()) tipo = TipoHab.DOBLE;
+        if (btnTriple.isSelected()) tipo = TipoHab.TRIPLE;
+        if (btnMatri.isSelected()) tipo = TipoHab.MATRIMONIAL;
+        
+        if (btnPrimerPiso.isSelected()){
+            h.setContp1(h.getContp1() + 1);
+            nuevaHab = new Habitacion(h.getContp1(), Piso.PRIMERO, precio, tipo);
+            h.addHab(nuevaHab); JOptionPane.showMessageDialog(null, "Habitación número "+nuevaHab.getNumero()+" añadida.", "Habitación añadida", 1);
+
+        }
+        if (btnSegundoPiso.isSelected()){
+             h.setContp2(h.getContp2() + 1);
+            nuevaHab = new Habitacion(h.getContp2(), Piso.SEGUNDO, precio, tipo);
+            h.addHab(nuevaHab); JOptionPane.showMessageDialog(null, "Habitación número "+nuevaHab.getNumero()+" añadida.", "Habitación añadida", 1);
+
+        }
+        if (btnTercerPiso.isSelected()){
+            h.setContp3(h.getContp3() + 1);
+            nuevaHab = new Habitacion(h.getContp3(), Piso.TERCERO, precio, tipo);
+            h.addHab(nuevaHab); JOptionPane.showMessageDialog(null, "Habitación número "+nuevaHab.getNumero()+" añadida.", "Habitación añadida", 1);
+
+        }
+        if (btnCuartoPiso.isSelected()){
+            h.setContp4(h.getContp4() + 1);
+            nuevaHab = new Habitacion(h.getContp4(), Piso.CUARTO, precio, tipo);
+            h.addHab(nuevaHab); JOptionPane.showMessageDialog(null, "Habitación número "+nuevaHab.getNumero()+" añadida.", "Habitación añadida", 1);
+        }
+        
+    }//GEN-LAST:event_btnRegistrarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -277,7 +352,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmHabilitarHabitacion().setVisible(true);
+                new FrmHabilitarHabitacion().setVisible(true);                
             }
         });
     }
@@ -285,13 +360,13 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton btnCuartoPiso;
     private javax.swing.JRadioButton btnDoble;
+    private javax.swing.JRadioButton btnMatri;
     private javax.swing.JRadioButton btnPrimerPiso;
     private javax.swing.JButton btnRegistrar;
     private javax.swing.JRadioButton btnSegundoPiso;
     private javax.swing.JRadioButton btnSimple;
     private javax.swing.JRadioButton btnTercerPiso;
     private javax.swing.JRadioButton btnTriple;
-    private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JLabel lblAviso;
     private javax.swing.JLabel lblPiso;
     private javax.swing.JLabel lblPrecio;
@@ -303,4 +378,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField txtCentimos;
     private javax.swing.JFormattedTextField txtSoles;
     // End of variables declaration//GEN-END:variables
+    private DocumentListener escucharCampos;
+    private Hotel h;
+    private ArrayList<JFormattedTextField> campos;
 }

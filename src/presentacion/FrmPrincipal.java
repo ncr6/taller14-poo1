@@ -154,6 +154,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         mnuitHabilitarHabitacion.setFont(mnuitHabilitarHabitacion.getFont().deriveFont(mnuitHabilitarHabitacion.getFont().getSize()+2f));
         mnuitHabilitarHabitacion.setText("Habilitar Habitación");
+        mnuitHabilitarHabitacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuitHabilitarHabitacionActionPerformed(evt);
+            }
+        });
         mnuAdmin.add(mnuitHabilitarHabitacion);
         mnuAdmin.add(jSeparator1);
 
@@ -264,8 +269,12 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuitSetRucActionPerformed
 
     private void btnHabitacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHabitacionesActionPerformed
-        new FrmBotonesHab(hotel.getHabs()).setVisible(true);
+        new FrmBotonesHab(getHotel()).setVisible(true);
     }//GEN-LAST:event_btnHabitacionesActionPerformed
+
+    private void mnuitHabilitarHabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitHabilitarHabitacionActionPerformed
+        new FrmHabilitarHabitacion(getHotel()).setVisible(true);
+    }//GEN-LAST:event_mnuitHabilitarHabitacionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -317,9 +326,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnuitSetRuc;
     // End of variables declaration//GEN-END:variables
     private Hotel hotel = new Hotel("indefinido", "00000000000");
+
+    public Hotel getHotel() {
+        return hotel;
+    }
     
-    int countPrimerPiso = 0;
-    int countSegundoPiso = 0;
-    int countTercerPiso = 0;
-    int countCuartoPiso = 0;
 }

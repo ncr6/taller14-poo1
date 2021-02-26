@@ -7,8 +7,10 @@ import java.util.ArrayList;
  * @author Nícolas Castillo (tecncr@NCR-TOSHIBA)
  */
 
-public class Habitacion {
+public class Habitacion implements Comparable<Habitacion>{
 
+    public Habitacion(){}
+    
     public Habitacion(int contPiso, Piso piso, float precioNoche, TipoHab tipo) {
         this.piso = piso;
         disponible = true;
@@ -97,6 +99,15 @@ public class Habitacion {
 
     public void setServicios(ArrayList<Servicio> servicios) {
         this.servicios = servicios;
+    }
+    
+    public int compareTo(Habitacion hab){
+        if (numero == hab.numero)
+            return 0;
+        else if (numero > hab.numero)
+            return 1;
+        else
+            return -1;
     }
 
     private int numero;

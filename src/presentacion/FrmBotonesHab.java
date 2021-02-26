@@ -19,9 +19,10 @@ public class FrmBotonesHab extends javax.swing.JFrame {
         initComponents();    
     }
     
-    public FrmBotonesHab(ArrayList<Habitacion> habs) {
+    public FrmBotonesHab(Hotel h) {
         initComponents();
-        this.habs = habs;
+        this.h = h;
+        botones = new ArrayList();
         botones.add(btnHab1); botones.add(btnHab2); botones.add(btnHab3); botones.add(btnHab4); botones.add(btnHab5);
         botones.add(btnHab6); botones.add(btnHab7); botones.add(btnHab8); botones.add(btnHab9); botones.add(btnHab10);
         botones.add(btnHab11); botones.add(btnHab12); botones.add(btnHab13); botones.add(btnHab14); botones.add(btnHab15);
@@ -360,7 +361,11 @@ public class FrmBotonesHab extends javax.swing.JFrame {
     }//GEN-LAST:event_btnVolverActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        
+        h.sortHabs();
+        for (int i=0; i<h.getHabs().size(); i++){
+            botones.get(i).setEnabled(true);
+            botones.get(i).setText("Habitación "+h.getHabs().get(i).getNumero());
+        }
     }//GEN-LAST:event_formWindowOpened
 
     /**
@@ -420,7 +425,7 @@ public class FrmBotonesHab extends javax.swing.JFrame {
     private javax.swing.JLabel lblAviso;
     private javax.swing.JLabel lblSeleccione;
     // End of variables declaration//GEN-END:variables
-    private ArrayList<Habitacion> habs;
-    private ArrayList<JButton> botones = new ArrayList();
+    private ArrayList<JButton> botones;
+    private Hotel h;
     
 }
