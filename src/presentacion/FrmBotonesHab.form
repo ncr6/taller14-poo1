@@ -180,7 +180,7 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnVolver" min="-2" pref="40" max="-2" attributes="0"/>
-              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -188,21 +188,20 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="btnHab1">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab1" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHab1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnHab2">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab2" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -210,10 +209,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab3">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab3" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -221,10 +218,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab4">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab4" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -232,10 +227,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab5">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab5" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -243,10 +236,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab6">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab6" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -254,10 +245,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab7">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab7" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -265,10 +254,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab8">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab8" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -276,10 +263,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab9">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab9" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -287,10 +272,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab10">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab10" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -298,10 +281,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab11">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab11" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -309,10 +290,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab12">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab12" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -320,10 +299,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab13">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab13" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -331,10 +308,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab14">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab14" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -342,10 +317,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab15">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab15" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -353,10 +326,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab16">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab16" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -364,10 +335,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab17">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab17" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -375,10 +344,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab18">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab18" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -386,10 +353,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab19">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab19" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -397,10 +362,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab20">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab20" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -408,10 +371,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab21">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab21" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -419,10 +380,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab22">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab22" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -430,10 +389,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab23">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab23" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -441,10 +398,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab24">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab24" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -452,10 +407,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab25">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab25" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -463,10 +416,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab26">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab26" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -474,10 +425,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab27">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab27" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -485,10 +434,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab28">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab28" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -496,10 +443,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab29">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab29" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -507,10 +452,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnHab30">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnHab30" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Habitaci&#xf3;n"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -518,10 +461,8 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblSeleccione">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font bold="true" component="lblSeleccione" property="font" relativeSize="true" size="3"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Seleccione una Habitaci&#xf3;n para acceder a sus datos"/>
@@ -529,10 +470,8 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblAviso">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="lblAviso" italic="true" property="font" relativeSize="true" size="1"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="14" style="2"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Un bot&#xf3;n deshabilitado indica una habitaci&#xf3;n que a&#xfa;n no ha sido habilitada. Revise el men&#xfa; Administraci&#xf3;n."/>
@@ -540,10 +479,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnVolver">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font bold="true" component="btnVolver" property="font" relativeSize="true" size="1"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Volver"/>
       </Properties>

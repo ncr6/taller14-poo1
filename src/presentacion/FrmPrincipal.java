@@ -73,11 +73,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        lblNombreHotel.setFont(lblNombreHotel.getFont().deriveFont(lblNombreHotel.getFont().getStyle() | java.awt.Font.BOLD, lblNombreHotel.getFont().getSize()+19));
+        lblNombreHotel.setFont(new java.awt.Font("Cantarell", 1, 28)); // NOI18N
         lblNombreHotel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblNombreHotel.setText("Le damos la bienvenida");
 
-        btnHabitaciones.setFont(btnHabitaciones.getFont().deriveFont(btnHabitaciones.getFont().getSize()+3f));
+        btnHabitaciones.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnHabitaciones.setText("Habitaciones");
         btnHabitaciones.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +85,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnHabBoleta.setFont(btnHabBoleta.getFont().deriveFont(btnHabBoleta.getFont().getSize()+3f));
+        btnHabBoleta.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnHabBoleta.setText("Generar Boleta");
         btnHabBoleta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,7 +93,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnSalir.setFont(btnSalir.getFont().deriveFont(btnSalir.getFont().getSize()+3f));
+        btnSalir.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,24 +101,24 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        lblAccesosDirectos.setFont(lblAccesosDirectos.getFont().deriveFont((lblAccesosDirectos.getFont().getStyle() | java.awt.Font.ITALIC), lblAccesosDirectos.getFont().getSize()+3));
+        lblAccesosDirectos.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         lblAccesosDirectos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAccesosDirectos.setText("Accesos Directos:");
 
-        lblRucHotel.setFont(lblRucHotel.getFont().deriveFont(lblRucHotel.getFont().getSize()+4f));
+        lblRucHotel.setFont(new java.awt.Font("Cantarell", 0, 18)); // NOI18N
         lblRucHotel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRucHotel.setText("Por favor establezca el nombre y RUC del Hotel en el menú \"Administración\"");
 
         mnuPrincipal.setFont(mnuPrincipal.getFont().deriveFont(mnuPrincipal.getFont().getSize()+5f));
 
         mnuBuscar.setText("Buscar");
-        mnuBuscar.setFont(mnuBuscar.getFont().deriveFont(mnuBuscar.getFont().getSize()+3f));
+        mnuBuscar.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
 
-        mnuitBuscarHabNum.setFont(mnuitBuscarHabNum.getFont().deriveFont(mnuitBuscarHabNum.getFont().getSize()+2f));
+        mnuitBuscarHabNum.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitBuscarHabNum.setText("Habitación por número");
         mnuBuscar.add(mnuitBuscarHabNum);
 
-        mnuitBuscarClienteDoc.setFont(mnuitBuscarClienteDoc.getFont().deriveFont(mnuitBuscarClienteDoc.getFont().getSize()+2f));
+        mnuitBuscarClienteDoc.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitBuscarClienteDoc.setText("Cliente por doc. de identidad");
         mnuitBuscarClienteDoc.setToolTipText("");
         mnuBuscar.add(mnuitBuscarClienteDoc);
@@ -126,15 +126,15 @@ public class FrmPrincipal extends javax.swing.JFrame {
         mnuPrincipal.add(mnuBuscar);
 
         mnuVista.setText("Vista General");
-        mnuVista.setFont(mnuVista.getFont().deriveFont(mnuVista.getFont().getSize()+3f));
+        mnuVista.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
 
-        mnuitReportHabit.setFont(mnuitReportHabit.getFont().deriveFont(mnuitReportHabit.getFont().getSize()+2f));
+        mnuitReportHabit.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitReportHabit.setText("Reporte de Habitaciones");
         mnuitReportHabit.setToolTipText("");
         mnuVista.add(mnuitReportHabit);
         mnuVista.add(jSeparator3);
 
-        mnuitHuespHabitacion.setFont(mnuitHuespHabitacion.getFont().deriveFont(mnuitHuespHabitacion.getFont().getSize()+2f));
+        mnuitHuespHabitacion.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitHuespHabitacion.setText("Huéspedes por Habitación");
         mnuitHuespHabitacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -143,16 +143,16 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         mnuVista.add(mnuitHuespHabitacion);
 
-        mnuitHuespApellido.setFont(mnuitHuespApellido.getFont().deriveFont(mnuitHuespApellido.getFont().getSize()+2f));
+        mnuitHuespApellido.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitHuespApellido.setText("Huéspedes por Apellido");
         mnuVista.add(mnuitHuespApellido);
 
         mnuPrincipal.add(mnuVista);
 
         mnuAdmin.setText("Administración");
-        mnuAdmin.setFont(mnuAdmin.getFont().deriveFont(mnuAdmin.getFont().getSize()+3f));
+        mnuAdmin.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
 
-        mnuitHabilitarHabitacion.setFont(mnuitHabilitarHabitacion.getFont().deriveFont(mnuitHabilitarHabitacion.getFont().getSize()+2f));
+        mnuitHabilitarHabitacion.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitHabilitarHabitacion.setText("Habilitar Habitación");
         mnuitHabilitarHabitacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,7 +162,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         mnuAdmin.add(mnuitHabilitarHabitacion);
         mnuAdmin.add(jSeparator1);
 
-        mnuitNombreHotel.setFont(mnuitNombreHotel.getFont().deriveFont(mnuitNombreHotel.getFont().getSize()+2f));
+        mnuitNombreHotel.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitNombreHotel.setText("Establecer nombre del Hotel");
         mnuitNombreHotel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,7 +171,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
         mnuAdmin.add(mnuitNombreHotel);
 
-        mnuitSetRuc.setFont(mnuitSetRuc.getFont().deriveFont(mnuitSetRuc.getFont().getSize()+2f));
+        mnuitSetRuc.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitSetRuc.setText("Establecer RUC");
         mnuitSetRuc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,7 +181,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         mnuAdmin.add(mnuitSetRuc);
         mnuAdmin.add(jSeparator2);
 
-        mnuitBorrarDatos.setFont(mnuitBorrarDatos.getFont().deriveFont(mnuitBorrarDatos.getFont().getSize()+2f));
+        mnuitBorrarDatos.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitBorrarDatos.setText("Borrar Datos");
         mnuAdmin.add(mnuitBorrarDatos);
 
@@ -196,17 +196,17 @@ public class FrmPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(135, 135, 135)
+                        .addGap(90, 90, 90)
                         .addComponent(btnHabitaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56)
+                        .addGap(81, 81, 81)
                         .addComponent(btnHabBoleta, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(63, 63, 63)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 128, Short.MAX_VALUE))
+                        .addGap(100, 100, 100))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblRucHotel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblRucHotel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 788, Short.MAX_VALUE)
                             .addComponent(lblAccesosDirectos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblNombreHotel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
@@ -218,9 +218,9 @@ public class FrmPrincipal extends javax.swing.JFrame {
                 .addComponent(lblNombreHotel)
                 .addGap(18, 18, 18)
                 .addComponent(lblRucHotel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 107, Short.MAX_VALUE)
                 .addComponent(lblAccesosDirectos)
-                .addGap(47, 47, 47)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnHabitaciones, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnHabBoleta, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)

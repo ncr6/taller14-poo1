@@ -83,135 +83,140 @@ public class FrmBotonesHab extends javax.swing.JFrame {
             }
         });
 
-        btnHab1.setFont(btnHab1.getFont().deriveFont(btnHab1.getFont().getSize()+2f));
+        btnHab1.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab1.setText("Habitación");
         btnHab1.setEnabled(false);
+        btnHab1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHab1ActionPerformed(evt);
+            }
+        });
 
-        btnHab2.setFont(btnHab2.getFont().deriveFont(btnHab2.getFont().getSize()+2f));
+        btnHab2.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab2.setText("Habitación");
         btnHab2.setEnabled(false);
 
-        btnHab3.setFont(btnHab3.getFont().deriveFont(btnHab3.getFont().getSize()+2f));
+        btnHab3.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab3.setText("Habitación");
         btnHab3.setEnabled(false);
 
-        btnHab4.setFont(btnHab4.getFont().deriveFont(btnHab4.getFont().getSize()+2f));
+        btnHab4.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab4.setText("Habitación");
         btnHab4.setEnabled(false);
 
-        btnHab5.setFont(btnHab5.getFont().deriveFont(btnHab5.getFont().getSize()+2f));
+        btnHab5.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab5.setText("Habitación");
         btnHab5.setEnabled(false);
 
-        btnHab6.setFont(btnHab6.getFont().deriveFont(btnHab6.getFont().getSize()+2f));
+        btnHab6.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab6.setText("Habitación");
         btnHab6.setEnabled(false);
 
-        btnHab7.setFont(btnHab7.getFont().deriveFont(btnHab7.getFont().getSize()+2f));
+        btnHab7.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab7.setText("Habitación");
         btnHab7.setEnabled(false);
 
-        btnHab8.setFont(btnHab8.getFont().deriveFont(btnHab8.getFont().getSize()+2f));
+        btnHab8.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab8.setText("Habitación");
         btnHab8.setEnabled(false);
 
-        btnHab9.setFont(btnHab9.getFont().deriveFont(btnHab9.getFont().getSize()+2f));
+        btnHab9.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab9.setText("Habitación");
         btnHab9.setEnabled(false);
 
-        btnHab10.setFont(btnHab10.getFont().deriveFont(btnHab10.getFont().getSize()+2f));
+        btnHab10.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab10.setText("Habitación");
         btnHab10.setEnabled(false);
 
-        btnHab11.setFont(btnHab11.getFont().deriveFont(btnHab11.getFont().getSize()+2f));
+        btnHab11.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab11.setText("Habitación");
         btnHab11.setEnabled(false);
 
-        btnHab12.setFont(btnHab12.getFont().deriveFont(btnHab12.getFont().getSize()+2f));
+        btnHab12.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab12.setText("Habitación");
         btnHab12.setEnabled(false);
 
-        btnHab13.setFont(btnHab13.getFont().deriveFont(btnHab13.getFont().getSize()+2f));
+        btnHab13.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab13.setText("Habitación");
         btnHab13.setEnabled(false);
 
-        btnHab14.setFont(btnHab14.getFont().deriveFont(btnHab14.getFont().getSize()+2f));
+        btnHab14.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab14.setText("Habitación");
         btnHab14.setEnabled(false);
 
-        btnHab15.setFont(btnHab15.getFont().deriveFont(btnHab15.getFont().getSize()+2f));
+        btnHab15.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab15.setText("Habitación");
         btnHab15.setEnabled(false);
 
-        btnHab16.setFont(btnHab16.getFont().deriveFont(btnHab16.getFont().getSize()+2f));
+        btnHab16.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab16.setText("Habitación");
         btnHab16.setEnabled(false);
 
-        btnHab17.setFont(btnHab17.getFont().deriveFont(btnHab17.getFont().getSize()+2f));
+        btnHab17.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab17.setText("Habitación");
         btnHab17.setEnabled(false);
 
-        btnHab18.setFont(btnHab18.getFont().deriveFont(btnHab18.getFont().getSize()+2f));
+        btnHab18.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab18.setText("Habitación");
         btnHab18.setEnabled(false);
 
-        btnHab19.setFont(btnHab19.getFont().deriveFont(btnHab19.getFont().getSize()+2f));
+        btnHab19.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab19.setText("Habitación");
         btnHab19.setEnabled(false);
 
-        btnHab20.setFont(btnHab20.getFont().deriveFont(btnHab20.getFont().getSize()+2f));
+        btnHab20.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab20.setText("Habitación");
         btnHab20.setEnabled(false);
 
-        btnHab21.setFont(btnHab21.getFont().deriveFont(btnHab21.getFont().getSize()+2f));
+        btnHab21.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab21.setText("Habitación");
         btnHab21.setEnabled(false);
 
-        btnHab22.setFont(btnHab22.getFont().deriveFont(btnHab22.getFont().getSize()+2f));
+        btnHab22.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab22.setText("Habitación");
         btnHab22.setEnabled(false);
 
-        btnHab23.setFont(btnHab23.getFont().deriveFont(btnHab23.getFont().getSize()+2f));
+        btnHab23.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab23.setText("Habitación");
         btnHab23.setEnabled(false);
 
-        btnHab24.setFont(btnHab24.getFont().deriveFont(btnHab24.getFont().getSize()+2f));
+        btnHab24.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab24.setText("Habitación");
         btnHab24.setEnabled(false);
 
-        btnHab25.setFont(btnHab25.getFont().deriveFont(btnHab25.getFont().getSize()+2f));
+        btnHab25.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab25.setText("Habitación");
         btnHab25.setEnabled(false);
 
-        btnHab26.setFont(btnHab26.getFont().deriveFont(btnHab26.getFont().getSize()+2f));
+        btnHab26.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab26.setText("Habitación");
         btnHab26.setEnabled(false);
 
-        btnHab27.setFont(btnHab27.getFont().deriveFont(btnHab27.getFont().getSize()+2f));
+        btnHab27.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab27.setText("Habitación");
         btnHab27.setEnabled(false);
 
-        btnHab28.setFont(btnHab28.getFont().deriveFont(btnHab28.getFont().getSize()+2f));
+        btnHab28.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab28.setText("Habitación");
         btnHab28.setEnabled(false);
 
-        btnHab29.setFont(btnHab29.getFont().deriveFont(btnHab29.getFont().getSize()+2f));
+        btnHab29.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab29.setText("Habitación");
         btnHab29.setEnabled(false);
 
-        btnHab30.setFont(btnHab30.getFont().deriveFont(btnHab30.getFont().getSize()+2f));
+        btnHab30.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnHab30.setText("Habitación");
         btnHab30.setEnabled(false);
 
-        lblSeleccione.setFont(lblSeleccione.getFont().deriveFont(lblSeleccione.getFont().getStyle() | java.awt.Font.BOLD, lblSeleccione.getFont().getSize()+3));
+        lblSeleccione.setFont(new java.awt.Font("Cantarell", 1, 16)); // NOI18N
         lblSeleccione.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblSeleccione.setText("Seleccione una Habitación para acceder a sus datos");
 
-        lblAviso.setFont(lblAviso.getFont().deriveFont((lblAviso.getFont().getStyle() | java.awt.Font.ITALIC), lblAviso.getFont().getSize()+1));
+        lblAviso.setFont(new java.awt.Font("Cantarell", 2, 14)); // NOI18N
         lblAviso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAviso.setText("Un botón deshabilitado indica una habitación que aún no ha sido habilitada. Revise el menú Administración.");
 
-        btnVolver.setFont(btnVolver.getFont().deriveFont(btnVolver.getFont().getStyle() | java.awt.Font.BOLD, btnVolver.getFont().getSize()+1));
+        btnVolver.setFont(new java.awt.Font("Cantarell", 1, 14)); // NOI18N
         btnVolver.setText("Volver");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -349,7 +354,7 @@ public class FrmBotonesHab extends javax.swing.JFrame {
                     .addComponent(btnHab28))
                 .addGap(18, 18, 18)
                 .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         pack();
@@ -367,6 +372,10 @@ public class FrmBotonesHab extends javax.swing.JFrame {
             botones.get(i).setText("Habitación "+h.getHabs().get(i).getNumero());
         }
     }//GEN-LAST:event_formWindowOpened
+
+    private void btnHab1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHab1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHab1ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -86,7 +86,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
         setResizable(false);
 
         selectorPiso.add(btnPrimerPiso);
-        btnPrimerPiso.setFont(btnPrimerPiso.getFont().deriveFont(btnPrimerPiso.getFont().getSize()+2f));
+        btnPrimerPiso.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnPrimerPiso.setText("Primero");
         btnPrimerPiso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,46 +96,46 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
         btnPrimerPiso.setSelected(true);
 
         selectorPiso.add(btnSegundoPiso);
-        btnSegundoPiso.setFont(btnSegundoPiso.getFont().deriveFont(btnSegundoPiso.getFont().getSize()+2f));
+        btnSegundoPiso.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnSegundoPiso.setText("Segundo");
 
         selectorPiso.add(btnTercerPiso);
-        btnTercerPiso.setFont(btnTercerPiso.getFont().deriveFont(btnTercerPiso.getFont().getSize()+2f));
+        btnTercerPiso.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnTercerPiso.setText("Tercero");
 
         selectorPiso.add(btnCuartoPiso);
-        btnCuartoPiso.setFont(btnCuartoPiso.getFont().deriveFont(btnCuartoPiso.getFont().getSize()+2f));
+        btnCuartoPiso.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         btnCuartoPiso.setText("Cuarto");
 
-        lblPiso.setFont(lblPiso.getFont().deriveFont(lblPiso.getFont().getSize()+3f));
+        lblPiso.setFont(new java.awt.Font("Cantarell", 1, 15)); // NOI18N
         lblPiso.setText("Seleccione el piso de la habitación a habilitar:");
 
-        lblPrecio.setFont(lblPrecio.getFont().deriveFont(lblPrecio.getFont().getSize()+3f));
+        lblPrecio.setFont(new java.awt.Font("Cantarell", 1, 16)); // NOI18N
         lblPrecio.setText("Precio por noche:");
 
-        lblTipo.setFont(lblTipo.getFont().deriveFont(lblTipo.getFont().getSize()+3f));
+        lblTipo.setFont(new java.awt.Font("Cantarell", 1, 16)); // NOI18N
         lblTipo.setText("Seleccione el tipo de habitación:");
 
         selectorTipo.add(btnSimple);
-        btnSimple.setFont(btnSimple.getFont().deriveFont(btnSimple.getFont().getSize()+2f));
+        btnSimple.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnSimple.setText("Simple");
 
         selectorTipo.add(btnDoble);
-        btnDoble.setFont(btnDoble.getFont().deriveFont(btnDoble.getFont().getSize()+2f));
+        btnDoble.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnDoble.setText("Doble");
 
         selectorTipo.add(btnTriple);
-        btnTriple.setFont(btnTriple.getFont().deriveFont(btnTriple.getFont().getSize()+2f));
+        btnTriple.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnTriple.setText("Triple");
 
         selectorTipo.add(btnMatri);
-        btnMatri.setFont(btnMatri.getFont().deriveFont(btnMatri.getFont().getSize()+2f));
+        btnMatri.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnMatri.setText("Matrimonial");
 
-        lblSoles.setFont(lblSoles.getFont().deriveFont(lblSoles.getFont().getSize()+2f));
+        lblSoles.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         lblSoles.setText("S/");
 
-        btnRegistrar.setFont(btnRegistrar.getFont().deriveFont(btnRegistrar.getFont().getSize()+3f));
+        btnRegistrar.setFont(new java.awt.Font("Cantarell", 0, 16)); // NOI18N
         btnRegistrar.setText("Registrar");
         btnRegistrar.setEnabled(false);
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
@@ -145,7 +145,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
         });
 
         txtSoles.setHorizontalAlignment(javax.swing.JTextField.TRAILING);
-        txtSoles.setFont(txtSoles.getFont().deriveFont(txtSoles.getFont().getSize()+2f));
+        txtSoles.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         txtSoles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSolesActionPerformed(evt);
@@ -174,12 +174,12 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
             }
         });
 
-        txtCentimos.setFont(txtCentimos.getFont().deriveFont(txtCentimos.getFont().getSize()+2f));
+        txtCentimos.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         txtCentimos.setName(""); // NOI18N
 
         lblAviso.setFont(lblAviso.getFont().deriveFont(lblAviso.getFont().getSize()-3f));
 
-        lblPunto.setFont(lblPunto.getFont().deriveFont(lblPunto.getFont().getSize()+2f));
+        lblPunto.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         lblPunto.setText(".");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

@@ -133,10 +133,8 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorPiso"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnPrimerPiso" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Primero"/>
       </Properties>
@@ -152,10 +150,8 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorPiso"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnSegundoPiso" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Segundo"/>
       </Properties>
@@ -165,10 +161,8 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorPiso"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnTercerPiso" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Tercero"/>
       </Properties>
@@ -178,40 +172,32 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorPiso"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnCuartoPiso" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cuarto"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblPiso">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="lblPiso" property="font" relativeSize="true" size="3"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Seleccione el piso de la habitaci&#xf3;n a habilitar:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblPrecio">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="lblPrecio" property="font" relativeSize="true" size="3"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Precio por noche:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblTipo">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="lblTipo" property="font" relativeSize="true" size="3"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Seleccione el tipo de habitaci&#xf3;n:"/>
       </Properties>
@@ -221,10 +207,8 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorTipo"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnSimple" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Simple"/>
       </Properties>
@@ -237,10 +221,8 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorTipo"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnDoble" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Doble"/>
       </Properties>
@@ -250,10 +232,8 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorTipo"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnTriple" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Triple"/>
       </Properties>
@@ -263,30 +243,24 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="selectorTipo"/>
         </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnMatri" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Matrimonial"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblSoles">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="lblSoles" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="S/"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnRegistrar">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="btnRegistrar" property="font" relativeSize="true" size="3"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="16" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Registrar"/>
         <Property name="enabled" type="boolean" value="false"/>
@@ -298,10 +272,8 @@
     <Component class="javax.swing.JFormattedTextField" name="txtSoles">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="11"/>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="txtSoles" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
       </Properties>
       <Events>
@@ -313,10 +285,8 @@
     </Component>
     <Component class="javax.swing.JFormattedTextField" name="txtCentimos">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="txtCentimos" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="name" type="java.lang.String" value="" noResource="true"/>
       </Properties>
@@ -335,10 +305,8 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblPunto">
       <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
-          <FontInfo relative="true">
-            <Font component="lblPunto" property="font" relativeSize="true" size="2"/>
-          </FontInfo>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Cantarell" size="15" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="."/>
       </Properties>
