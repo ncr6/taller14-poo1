@@ -5,9 +5,9 @@ package entidades;
  * @author Nícolas Castillo (tecncr@NCR-TOSHIBA)
  */
 
-public class Cliente {
+public class Huesped {
 
-    public Cliente(String nombres, String apellidos, String tipoDoc, String numDoc, String telf) {
+    public Huesped(String nombres, String apellidos, String tipoDoc, String numDoc, String telf) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.tipoDoc = tipoDoc;
