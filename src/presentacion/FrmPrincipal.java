@@ -233,7 +233,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHabBoletaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHabBoletaActionPerformed
-        // TODO add your handling code here:
+        new FrmBotonesBolHab(getHotel()).setVisible(true);
     }//GEN-LAST:event_btnHabBoletaActionPerformed
 
     private void mnuitHuespHabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitHuespHabitacionActionPerformed

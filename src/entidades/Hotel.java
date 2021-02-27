@@ -48,6 +48,10 @@ public class Hotel {
         Collections.sort(habs);
     }
     
+    public void setHabPos(int pos, Habitacion hab){
+        habs.set(pos, hab);
+    }
+    
     private String nombre;
     private String ruc;
     private ArrayList<Habitacion> habs;

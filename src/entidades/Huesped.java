@@ -55,6 +55,11 @@ public class Huesped {
         this.telf = telf;
     }
     
+    public String displayBoleta(){
+        return "Cliente: " + getNombres() + getApellidos() +
+               "\nDocumento de Identidad: " + getNumDoc();                
+    }
+    
     private String nombres;
     private String apellidos;
     private String tipoDoc;

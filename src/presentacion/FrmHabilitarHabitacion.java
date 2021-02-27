@@ -303,7 +303,7 @@ public class FrmHabilitarHabitacion extends javax.swing.JFrame {
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         Habitacion nuevaHab; TipoHab tipo = TipoHab.SIMPLE; float precio;
         
-        precio = Float.parseFloat(txtCentimos.getText())/10 + Float.parseFloat(txtSoles.getText());
+        precio = Float.parseFloat(txtCentimos.getText())/100 + Float.parseFloat(txtSoles.getText());
         
         if (btnSimple.isSelected()) tipo = TipoHab.SIMPLE;
         if (btnDoble.isSelected()) tipo = TipoHab.DOBLE;

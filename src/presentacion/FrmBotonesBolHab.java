@@ -12,16 +12,16 @@ import java.awt.event.ActionListener;
  * @author Nícolas Castillo (tecncr@NCR-TOSHIBA)
  */
 
-public class FrmBotonesHab extends javax.swing.JFrame {
+public class FrmBotonesBolHab extends javax.swing.JFrame {
 
     /**
-     * Creates new form FrmBotonesHab
+     * Creates new form FrmBotonesBolHab
      */
-    public FrmBotonesHab() {
+    public FrmBotonesBolHab() {
         initComponents();    
     }
     
-    public FrmBotonesHab(Hotel h) {
+    public FrmBotonesBolHab(Hotel h) {
         initComponents();
         this.h = h;
         botones = new ArrayList();
@@ -207,7 +207,7 @@ public class FrmBotonesHab extends javax.swing.JFrame {
 
         lblSeleccione.setFont(new java.awt.Font("Cantarell", 1, 16)); // NOI18N
         lblSeleccione.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblSeleccione.setText("Seleccione una Habitación para acceder a sus datos");
+        lblSeleccione.setText("Seleccione una Habitación para generar la boleta");
 
         lblAviso.setFont(new java.awt.Font("Cantarell", 2, 14)); // NOI18N
         lblAviso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -387,7 +387,7 @@ public class FrmBotonesHab extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmBotonesHab().setVisible(true);
+                new FrmBotonesBolHab().setVisible(true);
             }
         });
         
@@ -452,7 +452,10 @@ public class FrmBotonesHab extends javax.swing.JFrame {
         }
         
         public void actionPerformed(ActionEvent e){
-            new FrmHabitacion(h, hab, pos).setVisible(true);
+            String boleta = h.getNombre() + "\nRUC: " + h.getRuc();
+            boleta += "\nBoleta de venta electrónica.\n";
+            boleta += hab.displayBoleta();
+            JOptionPane.showMessageDialog(null, boleta, "Boleta de venta", 1);
         }
     }
 }

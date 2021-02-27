@@ -1,5 +1,4 @@
 package entidades;
-import java.util.GregorianCalendar;
 /**
  *
  * @author Nícolas Castillo (tecncr@NCR-TOSHIBA)
@@ -7,7 +6,7 @@ import java.util.GregorianCalendar;
 
 public class Servicio {
 
-    public Servicio(Habitacion habitacion, GregorianCalendar fechaServ, String descripcion, float costo) {
+    public Servicio(Habitacion habitacion, String fechaServ, String descripcion, float costo) {
         this.habitacion = habitacion;
         this.fechaServ = fechaServ;
         this.descripcion = descripcion;
@@ -22,11 +21,11 @@ public class Servicio {
         this.habitacion = habitacion;
     }
 
-    public GregorianCalendar getFechaServ() {
+    public String getFechaServ() {
         return fechaServ;
     }
 
-    public void setFechaServ(GregorianCalendar fechaServ) {
+    public void setFechaServ(String fechaServ) {
         this.fechaServ = fechaServ;
     }
 
@@ -46,8 +45,14 @@ public class Servicio {
         this.costo = costo;
     }
     
+    public String displayBoleta(){
+        return "Descripción: " + getDescripcion() +
+                "\nFecha: " + getFechaServ() +
+                "\nCosto unitario: S/ " + getCosto() + "\n";
+    }
+    
     private Habitacion habitacion;
-    private GregorianCalendar fechaServ;
+    private String fechaServ;
     private String descripcion;
     private float costo;
     

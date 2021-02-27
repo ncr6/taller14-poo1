@@ -1,5 +1,4 @@
 package entidades;
-import java.util.GregorianCalendar;
 import java.util.ArrayList;
 
 /**
@@ -14,7 +13,7 @@ public class Habitacion implements Comparable<Habitacion>{
     public Habitacion(int contPiso, Piso piso, float precioNoche, TipoHab tipo) {
         this.piso = piso;
         disponible = true;
-        fechaIngreso = new GregorianCalendar();
+        fechaIngreso = "";
         diasReserva = 0;
         this.precioNoche = precioNoche;
         this.tipo = tipo;
@@ -61,11 +60,11 @@ public class Habitacion implements Comparable<Habitacion>{
         this.precioNoche = precioNoche;
     }
 
-    public GregorianCalendar getFechaIngreso() {
+    public String getFechaIngreso() {
         return fechaIngreso;
     }
 
-    public void setFechaIngreso(GregorianCalendar fechaIngreso) {
+    public void setFechaIngreso(String fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
 
@@ -101,6 +100,29 @@ public class Habitacion implements Comparable<Habitacion>{
         this.servicios = servicios;
     }
     
+    public String displayBoleta(){
+        float montoBoleta = 0.0f;
+        if (!disponible) {
+            String adicionales = "Ninguno";
+            float montoservs = 0.0f;
+            if (!getServicios().isEmpty()){
+                adicionales = "";
+                for (Servicio serv : getServicios()){
+                    adicionales += serv.displayBoleta();
+                    montoservs += serv.getCosto();
+                }
+            }
+            montoBoleta += getPrecioNoche()*getDiasReserva() + montoservs;    
+            return "Por concepto de:\n\n"
+                    + "Servicio de Hospedaje.\nPrecio unitario: S/ " + getPrecioNoche() +
+                    "\nPrecio total: S/" + getPrecioNoche()*getDiasReserva() +
+                    "\nServicios adicionales: "+ adicionales + "\nPrecio total de servicios: S/" +
+                    montoservs + "\n\nMonto total a cancelar: S/" + montoBoleta;
+        } else {
+            return "Habitación disponible.\nDatos insuficientes para generar boleta.";
+        }
+    }
+    
     public int compareTo(Habitacion hab){
         if (numero == hab.numero)
             return 0;
@@ -109,12 +131,31 @@ public class Habitacion implements Comparable<Habitacion>{
         else
             return -1;
     }
+    
+    public void borrarEstadia(){
+        huespedes.clear();
+        servicios.clear();
+        setDisponible(true);
+        setDiasReserva(0);
+    }
+    
+    public void setHuespPos(int pos, Huesped huesp){
+        huespedes.set(pos, huesp);
+    }
 
+    public void addHuesp(Huesped huesp){
+        huespedes.add(huesp);
+    }
+    
+    public void addServ(Servicio serv){
+        servicios.add(serv);
+    }
+    
     private int numero;
     private Piso piso;
     private boolean disponible;
     private float precioNoche;
-    private GregorianCalendar fechaIngreso;
+    private String fechaIngreso;
     private int diasReserva;
     private TipoHab tipo;
     private ArrayList<Huesped> huespedes;
