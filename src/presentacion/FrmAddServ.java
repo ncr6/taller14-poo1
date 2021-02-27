@@ -50,6 +50,7 @@ public class FrmAddServ extends javax.swing.JFrame {
         btnRegistrar = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
         lblAviso = new javax.swing.JLabel();
+        lblAvisoAdded = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Registro de Servicio Adicional");
@@ -98,18 +99,23 @@ public class FrmAddServ extends javax.swing.JFrame {
 
         lblAviso.setFont(new java.awt.Font("Cantarell", 0, 12)); // NOI18N
 
+        lblAvisoAdded.setFont(new java.awt.Font("Cantarell", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(lblDescripcion)
                         .addGap(28, 28, 28)
                         .addComponent(txtDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblTitulo)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblTitulo)
+                        .addGap(125, 125, 125)
+                        .addComponent(lblAvisoAdded, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblCosto)
@@ -137,7 +143,9 @@ public class FrmAddServ extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
-                .addComponent(lblTitulo)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblTitulo)
+                    .addComponent(lblAvisoAdded, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
@@ -222,10 +230,11 @@ public class FrmAddServ extends javax.swing.JFrame {
             float precio = Float.parseFloat(txtCentimos.getText())/100 + Float.parseFloat(txtSoles.getText());
             Servicio serv = new Servicio(hab, txtFecha.getText(), txtDescripcion.getText(), precio);
             hab.addServ(serv);
+            lblAvisoAdded.setText("Servicio Registrado con Éxito.");
         } catch (Exception ex) {
             System.out.println(ex);
             JOptionPane.showMessageDialog(null, "Por favor rellene todos los campos y revise los datos ingresados", "Aviso", 2);
-
+            lblAvisoAdded.setText("ERROR: Verifique datos ingresados");
         }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
@@ -255,6 +264,7 @@ public class FrmAddServ extends javax.swing.JFrame {
     private javax.swing.JButton btnRegistrar;
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel lblAviso;
+    private javax.swing.JLabel lblAvisoAdded;
     private javax.swing.JLabel lblCosto;
     private javax.swing.JLabel lblDescripcion;
     private javax.swing.JLabel lblFecha;

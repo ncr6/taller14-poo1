@@ -384,7 +384,7 @@ public class FrmHabitacion extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBorrarActionPerformed
 
     private void btnRegistrarServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarServicioActionPerformed
-        //TODO
+        new FrmAddServ(hab).setVisible(true);
     }//GEN-LAST:event_btnRegistrarServicioActionPerformed
 
     private void btnRegistrarEstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarEstActionPerformed
