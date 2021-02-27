@@ -452,7 +452,7 @@ public class FrmBotonesHab extends javax.swing.JFrame {
         }
         
         public void actionPerformed(ActionEvent e){
-            new FrmHabitacion(h, hab, pos).setVisible(true);
+            new FrmHabitacion(h, hab).setVisible(true);
         }
     }
 }

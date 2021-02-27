@@ -52,6 +52,10 @@ public class Hotel {
         habs.set(pos, hab);
     }
     
+    public void limpiarHabs(){
+        habs.clear();
+    }
+    
     private String nombre;
     private String ruc;
     private ArrayList<Habitacion> habs;

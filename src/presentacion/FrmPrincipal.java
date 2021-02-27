@@ -50,9 +50,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
         mnuitBuscarClienteDoc = new javax.swing.JMenuItem();
         mnuVista = new javax.swing.JMenu();
         mnuitReportHabit = new javax.swing.JMenuItem();
-        jSeparator3 = new javax.swing.JPopupMenu.Separator();
-        mnuitHuespHabitacion = new javax.swing.JMenuItem();
-        mnuitHuespApellido = new javax.swing.JMenuItem();
         mnuAdmin = new javax.swing.JMenu();
         mnuitHabilitarHabitacion = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
@@ -116,11 +113,21 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         mnuitBuscarHabNum.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitBuscarHabNum.setText("Habitación por número");
+        mnuitBuscarHabNum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuitBuscarHabNumActionPerformed(evt);
+            }
+        });
         mnuBuscar.add(mnuitBuscarHabNum);
 
         mnuitBuscarClienteDoc.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitBuscarClienteDoc.setText("Cliente por doc. de identidad");
         mnuitBuscarClienteDoc.setToolTipText("");
+        mnuitBuscarClienteDoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuitBuscarClienteDocActionPerformed(evt);
+            }
+        });
         mnuBuscar.add(mnuitBuscarClienteDoc);
 
         mnuPrincipal.add(mnuBuscar);
@@ -131,21 +138,12 @@ public class FrmPrincipal extends javax.swing.JFrame {
         mnuitReportHabit.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitReportHabit.setText("Reporte de Habitaciones");
         mnuitReportHabit.setToolTipText("");
-        mnuVista.add(mnuitReportHabit);
-        mnuVista.add(jSeparator3);
-
-        mnuitHuespHabitacion.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
-        mnuitHuespHabitacion.setText("Huéspedes por Habitación");
-        mnuitHuespHabitacion.addActionListener(new java.awt.event.ActionListener() {
+        mnuitReportHabit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnuitHuespHabitacionActionPerformed(evt);
+                mnuitReportHabitActionPerformed(evt);
             }
         });
-        mnuVista.add(mnuitHuespHabitacion);
-
-        mnuitHuespApellido.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
-        mnuitHuespApellido.setText("Huéspedes por Apellido");
-        mnuVista.add(mnuitHuespApellido);
+        mnuVista.add(mnuitReportHabit);
 
         mnuPrincipal.add(mnuVista);
 
@@ -183,6 +181,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
         mnuitBorrarDatos.setFont(new java.awt.Font("Cantarell", 0, 15)); // NOI18N
         mnuitBorrarDatos.setText("Borrar Datos");
+        mnuitBorrarDatos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuitBorrarDatosActionPerformed(evt);
+            }
+        });
         mnuAdmin.add(mnuitBorrarDatos);
 
         mnuPrincipal.add(mnuAdmin);
@@ -236,10 +239,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
         new FrmBotonesBolHab(getHotel()).setVisible(true);
     }//GEN-LAST:event_btnHabBoletaActionPerformed
 
-    private void mnuitHuespHabitacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitHuespHabitacionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mnuitHuespHabitacionActionPerformed
-
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         if (confirmar("¿Desea salir del programa?"))
             System.exit(0);
@@ -276,6 +275,53 @@ public class FrmPrincipal extends javax.swing.JFrame {
         new FrmHabilitarHabitacion(getHotel()).setVisible(true);
     }//GEN-LAST:event_mnuitHabilitarHabitacionActionPerformed
 
+    private void mnuitBuscarHabNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitBuscarHabNumActionPerformed
+        try{
+            int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número de la habitación que desee buscar", "Búsqueda de habitación por número", 1));
+            boolean encontrado = false;
+            for (Habitacion hab : hotel.getHabs()){
+                if (num == hab.getNumero()){
+                    encontrado = true;
+                    new FrmHabitacion(hotel, hab).setVisible(true);
+                }               
+            }
+            if (!encontrado)
+                JOptionPane.showMessageDialog(null, "No se encontraron resultados para la búsqueda", "Sin resultados", 1);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Por favor ingrese solo datos numéricos", "Búsqueda inválida", 2);
+        }
+    }//GEN-LAST:event_mnuitBuscarHabNumActionPerformed
+
+    private void mnuitReportHabitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitReportHabitActionPerformed
+        new FrmBotonesHab(getHotel()).setVisible(true);
+    }//GEN-LAST:event_mnuitReportHabitActionPerformed
+
+    private void mnuitBorrarDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitBorrarDatosActionPerformed
+        if (confirmar("¿Desea limpiar los datos de todas las habitaciones?"))
+            hotel.limpiarHabs();
+    }//GEN-LAST:event_mnuitBorrarDatosActionPerformed
+
+    private void mnuitBuscarClienteDocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuitBuscarClienteDocActionPerformed
+        try{
+            String dni = JOptionPane.showInputDialog(null, "Ingrese el nro. de documento del huésped que desee buscar", "Búsqueda de huesped por DNI", 1);
+            boolean encontrado = false;
+            for (Habitacion hab: hotel.getHabs()){
+                for (Huesped hues : hab.getHuespedes()){
+                    if (dni.equals(hues.getNumDoc())){
+                        encontrado = true;
+                        JOptionPane.showMessageDialog(null,
+                                "Se encontró al huesped "+hues.getNombres()+" "+hues.getApellidos()+"\nEn la habitación "+hab.getNumero(), "Huesped encontrado", 1);
+
+                    }
+                }
+            }
+            if (!encontrado)
+                JOptionPane.showMessageDialog(null, "No se encontraron resultados para la búsqueda", "Sin resultados", 1);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Por favor ingrese solo datos numéricos", "Búsqueda inválida", 2);
+        }
+    }//GEN-LAST:event_mnuitBuscarClienteDocActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -307,7 +353,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton btnSalir;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
-    private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JLabel lblAccesosDirectos;
     private javax.swing.JLabel lblNombreHotel;
     private javax.swing.JLabel lblRucHotel;
@@ -319,8 +364,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnuitBuscarClienteDoc;
     private javax.swing.JMenuItem mnuitBuscarHabNum;
     private javax.swing.JMenuItem mnuitHabilitarHabitacion;
-    private javax.swing.JMenuItem mnuitHuespApellido;
-    private javax.swing.JMenuItem mnuitHuespHabitacion;
     private javax.swing.JMenuItem mnuitNombreHotel;
     private javax.swing.JMenuItem mnuitReportHabit;
     private javax.swing.JMenuItem mnuitSetRuc;

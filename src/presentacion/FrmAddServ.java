@@ -12,7 +12,7 @@ import com.formdev.flatlaf.FlatLightLaf;
 import javax.swing.JOptionPane;
 /**
  *
- * @author tecncr
+ * @author Nícolas Castillo (tecncr@NCR-TOSHIBA)
  */
 public class FrmAddServ extends javax.swing.JFrame {
 

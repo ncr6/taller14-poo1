@@ -14,11 +14,10 @@ public class FrmHabitacion extends javax.swing.JFrame {
         initComponents();
     }
     
-    public FrmHabitacion(Hotel h, Habitacion hab, int pos) {
+    public FrmHabitacion(Hotel h, Habitacion hab) {
         initComponents();
         this.h = h;
         this.hab = hab;
-        this.pos = pos;
     }
     
     private void activarCajas(boolean estado){
@@ -469,5 +468,4 @@ public class FrmHabitacion extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     private Hotel h;
     private Habitacion hab;
-    private int pos;
 }
